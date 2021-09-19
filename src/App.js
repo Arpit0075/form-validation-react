@@ -45,7 +45,7 @@ function App() {
         break;
       case "age":
         if (/[a-zA-Z]/g.test(state.age)) {
-          errors.errAge = "enter age in number;
+          errors.errAge = "enter age in number";
           setIsDisabled(true);
         } else {
           errors.errAge = "";
