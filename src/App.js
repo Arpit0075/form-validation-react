@@ -44,8 +44,8 @@ function App() {
         }
         break;
       case "age":
-        if (state.age < 18 || /[a-zA-Z]/g.test(state.age)) {
-          errors.errAge = "not eligible for job";
+        if (/[a-zA-Z]/g.test(state.age)) {
+          errors.errAge = "enter age in number;
           setIsDisabled(true);
         } else {
           errors.errAge = "";
